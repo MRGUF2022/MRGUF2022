@@ -1,0 +1,37 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MainMenu : MonoBehaviour
+{
+    [SerializeField] GameObject Menu;
+    [SerializeField] GameObject Opinion;
+    [SerializeField] GameObject Keybinds;
+
+    public void OpenMenu()
+    {
+    
+        Menu.SetActive(true);
+        Opinion.SetActive(false);
+        Keybinds.SetActive(false);
+
+    }
+
+    public void OpenOpinion()
+    {
+    
+        Menu.SetActive(false);
+        Opinion.SetActive(true);
+        Keybinds.SetActive(false);
+
+    }
+
+    public void OpenKeybinds()
+    {
+    
+        Menu.SetActive(false);
+        Opinion.SetActive(false);
+        Keybinds.SetActive(true);
+
+    }
+}
